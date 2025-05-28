@@ -1,0 +1,1599 @@
+
+:root{
+        --nav-Color:#191970;
+        --bodyColor:#fff;
+        --darkbodycolor:#333333;
+        --secondary-bodyColor:#6495ED;
+        --dodgeBlue-color:#1E90FF;
+        --maintext-color: #111;
+        --secondarttext-color:#fff;
+        --footebkgrd-color:#E8E8E8;
+        --btn-color:#FF4500;
+        --boxShadow-one: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+        --boxShadow-two: 0px 25px 80px rgba(0, 0, 0, 0.5);
+        --boxShadow-three: 0 29px 52px rgba(0,0,0,0.40), 0 25px 16px rgba(0,0,0,0.20);    
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    border: none;
+    list-style: none;
+    
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+body{    
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+    color: var(--maintext-color);
+    background-color: var(--bodyColor);    
+    /* overflow-x: hidden; */
+}
+
+nav{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    background-color:var(--nav-Color);
+    z-index: 10;
+    transition: all 300ms ease-in-out;
+}
+
+.scrolled{
+    background-color: var(--secondary-bodyColor);
+}
+
+nav .container{
+    position: relative;
+    margin: 0 auto;   
+    background-color:var(--main-bodyColor);
+    width: 100%;
+    height: 5rem;
+    display: flex;            
+    justify-content:space-around;
+    align-items: center;    
+    
+    
+}
+
+html{
+    font-family: "poppins";
+}
+
+.logo{
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.logo img{
+    height:4rem;
+    width: 4rem;
+    border-radius: 50%;
+}
+
+
+
+.pwr ul{
+    display: flex;
+    gap: 0;
+}
+
+.pwr ul a{
+    color: var(--secondarttext-color);
+}
+
+.pwr ul a.a-class{
+  text-align: center;
+}
+
+.logins{
+    display: flex;
+    gap: 0.5rem;
+}
+
+.logins .gold, .logins .silver, .logins .dash{
+    background-color: antiquewhite;
+    width: 5rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    box-shadow: var(--boxShadow-two);
+    text-align: center; 
+    color: #111;   
+}
+
+
+
+.logins .gold{
+    background-color: gold;
+}
+
+.logins .silver{
+    background-color: silver;
+}
+
+.logins .dash{
+    background-color: #fff;
+}
+
+.a-class{
+    height: 5rem;
+    width: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: orange; */
+}
+
+/* .active{
+    height: 5rem;
+    width: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary-bodyColor);
+} */
+
+nav .container .pwr ul a{
+    transition: all 400ms ease-in-out;
+}
+
+/* nav .container .pwr ul a:hover{
+    background-color: var(--btn-color);
+} */
+
+nav .container .pwr ul a:hover{
+    height: 5rem;
+    width: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--btn-color);    
+}
+
+.active{
+  /* height: 5rem;
+  width: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center; */
+  background-color: var(--btn-color); 
+}
+
+.light-dark{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: #fff;
+    cursor: pointer;    
+}
+
+.light{
+    background-color: #fff;
+    width: 0.5rem;
+    height: 1rem; 
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+
+.dark{
+    background-color: black;
+    width: 0.5rem;
+    height: 1rem;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    
+}
+
+.humburherIcon{
+    display: none;
+}
+
+.humburherIcon span{
+    color:#fff;
+}
+
+/* ===================== Hero section =========================== */
+
+section{
+    width: 100%;    
+}
+
+
+section .header{
+    position: relative;
+    margin-top: 5rem;
+    width: 100%;
+    height: 55rem;
+    background: url('./assets/truckOnMove.jpg') no-repeat center center/cover;
+}
+
+section .header-text h1{
+    position: absolute;
+    left: 6rem;    
+    top: 25rem;
+    font-size:5rem;
+    font-weight:bold;    
+    color: #fff;  
+    text-align: center;
+}
+
+section .header-image img{
+    position: absolute;
+    left: 40rem;
+    top: 35rem;
+    width: 10rem;
+}
+
+
+/* ================= About Section ===================*/
+section#about{
+    width: 100vw;
+    height: fit-content;
+    margin: -5rem auto;
+    margin: 0 auto 1rem;
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+    gap: 2rem;    
+    padding: 2rem;
+    /* border: solid;  */
+       
+}
+
+section .articles{ 
+    display: grid;
+    grid-template-columns: 1fr 1fr;    
+    gap: 5rem;
+}
+
+.articles .image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 15px var(--nav-Color);
+    
+}
+
+.articles .image img{
+    width: 100%;
+    height: 25rem;
+    
+    /* width: fit-content;
+    height: fit-content; */
+}
+
+
+.articles .description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    /* border: solid 4px red; */
+}
+
+.articles .description h2{
+  text-align: center;
+}
+
+/* ========================== Main section ================================ */
+
+section#main{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: space-evenly;
+  gap: 1rem;
+  padding: 2rem;
+  
+}
+
+section#main .mainfeatures{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;  
+    
+}
+
+.features{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  
+}
+
+.features-image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 15px var(--nav-Color);
+}
+
+.features-image img{
+  width: 100%;
+  height: 25rem;
+}
+
+/* ================================ End of main Section ========================= */
+
+.list-heading{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.list ul{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 1rem; 
+  
+}
+
+.list ul li{
+  list-style: disc;
+  transition: all 200ms ease;
+}
+
+.list ul li:hover{
+  transform: translateX(4px);
+  cursor: pointer;
+}
+
+/* ==================== Benefits Section ========================= */
+
+section#benefits{
+    width: 100%;
+    height: fit-content;
+    margin: 2rem auto auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    align-items: center;
+    gap: 2rem;    
+    padding: 2rem;
+    /* border: solid; */
+}
+
+.benefits-faqs{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.faq-cards{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;    
+    align-items: center;    
+    width: 50rem;
+    height: max-content;
+    background-color: #fff;
+    padding: 2rem;
+    cursor: pointer;
+    box-shadow: var(--boxShadow-three);
+    transition: all 700ms ease-in-out;    
+}
+
+/* @keyframes move{
+    0%{height: min-content;}
+
+    100%{height: max-content;}
+} */
+
+.faq-cards:active{
+    transform: translateY(4px);
+}
+
+.hide{
+    display: none;
+}
+
+.faq{
+    display: flex;
+    gap: 2rem;
+    
+}
+
+.faq .down-up{
+    display: flex;
+    
+}
+
+.faq-cards .faq{
+    display: flex;
+    gap: 1rem;
+   
+}
+
+
+.faq-cards .ans{
+    border-top: 1px solid var(--btn-color);
+    border-bottom: 1px solid var(--btn-color);
+        
+}
+
+
+/* ===================swiper section =============================== */
+
+section#swiperSection{
+    margin-top: 4rem;
+    height: 25rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+.swiper{    
+    width: 80rem;
+    height: 23.44rem;
+
+}
+
+
+
+
+/* =======================Contact Sevtion============================== */
+
+section#contact{
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    color: var(--secondarttext-color);
+    background: url('./assets/speedometer.jpg') no-repeat center center/cover;    
+}
+
+.contact-form{
+    padding: 2rem;
+}
+
+.contact-form form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    gap: 2rem;    
+}
+
+
+.contact-form form input{
+    width: 25rem;
+    height: 3rem;
+    border: solid var(--secondarttext-color);
+    background: transparent;
+    color: var(--secondarttext-color);    
+}
+
+.contact-form form input::placeholder{
+    color: var(--secondarttext-color);
+}
+
+
+.contact-form form textarea{
+    width: 25rem;
+    height: 15rem;
+    border: solid var(--secondarttext-color);
+    background: transparent;
+    color: var(--secondarttext-color);
+}
+
+.contact-form form textarea::placeholder{
+    color: var(--secondarttext-color);
+}
+
+.contact-form form button{
+    width: 15rem;
+    height: 3rem;
+    background-color: var(--secondary-bodyColor);
+    color: var(--secondarttext-color);
+    cursor: pointer;
+}
+
+
+footer{
+    width: 100%;
+    max-height:max-content;
+    display: flex;
+    flex-direction: column;
+   background-color: var(--footebkgrd-color);
+}
+
+.location-address{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 2rem;
+}
+
+
+.location-address .location{
+    display: flex;
+    flex-direction: column;
+    gap: 7rem;
+    justify-content:center;
+    align-items:center;
+}
+
+.location-address .socialmedia{
+    display: flex;
+    flex-direction: column;
+    gap: 7rem;
+    justify-content:center;
+    align-items:center;
+
+}
+
+.socialmedia .bi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    font-size: 2rem;   
+    background-color:var(--secondarttext-color);   
+
+}
+
+.socialmedia .bi-whatsapp{
+    color: #00e600;
+    
+}
+    
+
+footer .copyright small{
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    justify-content:center;
+    align-items: center;   
+
+}
+
+.dark-theme{
+    background-color: var(--darkbodycolor);
+    color: var(--secondarttext-color);
+    border: solid 15px var(--bodyColor);
+}
+
+
+
+/* ========== Media Queries ============== */
+@media screen and (min-width: 320px) and (max-width: 360px){
+
+  nav .container .logo{
+    display: none;
+  }
+
+  nav .container .pwr ul{
+    position: absolute;
+    top: 5rem;
+    display: flex;
+    flex-direction: column;
+    left: -100%;
+    gap: 0.1rem;
+    transition: all 400ms ease-in-out;           
+  }
+
+  nav .container .pwr ul.showOnClick{
+    left: 0;
+  }
+
+
+  nav .container .pwr ul a{
+    background-color:#BEC3C9;
+    width: 15rem;
+    border-bottom: solid;
+  }
+
+  nav .container .pwr ul a:last-child{
+    border-bottom: none;
+  }
+
+  nav .container .pwr ul a:hover{
+    background-color: #BEC3C9;
+    width: 15rem;
+    border-bottom: solid;      
+  }
+
+  nav .container .pwr ul a:hover:last-child{
+    border-bottom: none;
+  }
+
+  
+  nav .humburherIcon{
+    display: flex;
+  }
+
+  nav .humburherIcon span{
+    font-size: 2rem;
+  }
+
+  section#header{
+    width: 100vw;  
+    
+  }
+
+  section .header{
+    width: 100%;  
+
+  }
+
+  section .header-text h1{
+    left: 6rem;
+    top: 25rem;    
+    font-size: 2rem;
+        
+
+  }
+
+  section .header-image img{
+    left: 0;
+    top: 19rem;
+    width: 5rem;
+  }
+
+  section#about{
+    width: 100vw;
+  }
+
+  section#about .articles{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .articles .description{
+    gap: 1.5rem;
+  }
+
+  .articles .image img{
+    width: 100%;
+    height: auto;    
+
+}
+
+section#main .mainfeatures{
+  width: 100%;
+  display:flex;
+  flex-direction: column;
+  gap: 2rem; 
+    
+}
+
+  section#benefits{
+    width: 100vw;
+    margin-top: 1rem;
+    padding: 1rem;
+  }
+
+  .faq-cards{
+    width: 100%;
+  }
+
+  section#swiperSection{
+    width: 100vw;    
+  } 
+
+  section#swiperSection{
+    width: 100%;
+  }
+
+  section#contact{
+    width: 100vw;
+  }
+
+
+  .contact-form{
+    width: 95%;
+  }
+
+  .swiper{    
+    width: 20rem;    
+    height: 18rem;
+}
+
+.swiper-slide img{
+    width: 20rem;    
+    height: 18rem;
+}
+
+section#swiperSection{
+    margin-top: 3rem;
+}
+
+section#contact{
+    margin-top: 3rem;
+}
+
+.contact-form form input{
+    width: 15rem;
+    height: 3rem;
+}
+
+.contact-form form textarea{
+    width: 15rem;
+    height: 15rem;
+}
+
+
+footer#footer{
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+footer .location-address{
+    display: flex;    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+  }
+
+
+  .location-address .location{
+    gap: 3rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  .location-address .socialmedia{
+    flex-direction: row;
+    margin-top: 1rem;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+  }
+
+
+}
+
+
+@media screen and (min-width: 360px)and (max-width: 480px) and (orientation: portrait){
+
+    nav .container .logo{
+        display: none;
+      }
+    
+      nav .container .pwr ul{
+        position: absolute;
+        top: 5rem;
+        display: flex;
+        flex-direction: column;
+        left: -100%;
+        gap: 0.1rem;
+        transition: all 400ms ease-in-out;       
+      }
+
+      nav .container .pwr ul.showOnClick{
+        left: 0;
+      }
+    
+    
+      nav .container .pwr ul a{
+        background-color:#BEC3C9;
+        width: 15rem;
+        border-bottom: solid;
+        
+      }
+    
+      nav .container .pwr ul a:last-child{
+        border-bottom: none;
+      }
+    
+      nav .container .pwr ul a:hover{
+        background-color: #BEC3C9;
+        width: 15rem;
+        border-bottom: solid;
+              
+      }
+    
+      nav .container .pwr ul a:hover:last-child{
+        border-bottom: none;
+      }    
+
+      
+      nav .humburherIcon{
+        display: flex;
+      }
+    
+      nav .humburherIcon span{
+        font-size: 2rem;
+      }
+    
+      section#header{
+        width: 100vw;  
+        
+      }
+    
+      section .header{
+        width: 100%;  
+    
+      }
+    
+      section .header-text h1{
+        left: 6rem;
+        top: 25rem;    
+        font-size: 2rem;
+           
+      }
+    
+      section .header-image img{
+        left: 0;
+        top: 19rem;
+        width: 5rem;
+      }
+    
+      section#about{
+        width: 100vw;
+      }
+    
+      section#about .articles{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+      }
+    
+      .articles .description{
+        gap: 1.5rem;
+      }
+    
+      .articles .image img{
+        width: 100%;
+        height: auto;    
+    
+    }
+
+    section#main .mainfeatures{
+      width: 100%;
+      display:flex;
+      flex-direction: column;
+      gap: 2rem; 
+        
+    }
+    
+      section#benefits{
+        width: 100vw;
+        margin-top: 1rem;
+        padding: 1rem;
+      }
+    
+      .faq-cards{
+        width: 100%;
+      }
+    
+      section#swiperSection{
+        width: 100vw;    
+      } 
+    
+      section#swiperSection{
+        width: 100%;
+      }
+    
+      section#contact{
+        width: 100vw;
+      }
+    
+    
+      .contact-form{
+        width: 95%;
+      }
+    
+      .swiper{    
+        width: 20rem;    
+        height: 18rem;
+    }
+    
+    .swiper-slide img{
+        width: 20rem;    
+        height: 18rem;
+    }
+    
+    section#swiperSection{
+        margin-top: 3rem;
+    }
+    
+    section#contact{
+        margin-top: 3rem;
+    }
+    
+    .contact-form form input{
+        width: 15rem;
+        height: 3rem;
+    }
+    
+    .contact-form form textarea{
+        width: 15rem;
+        height: 15rem;
+    }
+    
+    
+    footer#footer{
+      width: 100vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    
+    footer .location-address{
+        display: flex;
+        width: fit-content;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+      }
+    
+    
+      .location-address .location{
+        gap: 3rem;
+        width: 100%;
+        text-align: center;
+      }
+    
+      .location-address .socialmedia{
+        flex-direction: row;
+        margin-top: 1rem;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+      }
+
+}
+
+
+@media screen and (min-width: 480px) and (max-width: 640px){
+
+    nav .container .logo{
+        display: none;
+      }
+    
+      nav .container .pwr ul{
+        position: absolute;
+        top: 5rem;
+        display: flex;
+        flex-direction: column;
+        left: -100%;
+        gap: 0.1rem;
+        transition: all 400ms ease-in-out;       
+      }
+
+      nav .container .pwr ul.showOnClick{
+        left: 0;
+      }
+    
+    
+      nav .container .pwr ul a{
+        background-color:#BEC3C9;
+        width: 15rem;
+        border-bottom: solid;
+        
+      }
+    
+      nav .container .pwr ul a:last-child{
+        border-bottom: none;
+      }
+    
+      nav .container .pwr ul a:hover{
+        background-color: #BEC3C9;
+        width: 15rem;
+        border-bottom: solid;
+              
+      }
+    
+      nav .container .pwr ul a:hover:last-child{
+        border-bottom: none;
+      }    
+
+      
+      nav .humburherIcon{
+        display: flex;
+      }
+    
+      nav .humburherIcon span{
+        font-size: 2rem;
+      }
+    
+      section#header{
+        width: 100vw;  
+        
+      }
+    
+      section .header{
+        width: 100%;  
+    
+      }
+    
+      section .header-text h1{
+        left: 6rem;
+        top: 25rem;    
+        font-size: 2.5rem; 
+    
+      }
+    
+      section .header-image img{
+        left: 0;
+        top: 19rem;
+        width: 5rem;
+      }
+    
+      section#about{
+        width: 100vw;
+      }
+    
+      section#about .articles{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+      }
+    
+      .articles .description{
+        gap: 1.5rem;
+      }
+    
+      .articles .image img{
+        width: 100%;
+        height: auto;    
+    
+    }
+
+    section#main .mainfeatures{
+      width: 100%;
+      display:flex;
+      flex-direction: column;
+      gap: 2rem; 
+        
+    }
+    
+      section#benefits{
+        width: 100vw;
+        margin-top: 1rem;
+        padding: 1rem;
+      }
+    
+      .faq-cards{
+        width: 100%;
+      }
+    
+      section#swiperSection{
+        width: 100vw;    
+      } 
+    
+      section#swiperSection{
+        width: 100%;
+      }
+    
+      section#contact{
+        width: 100vw;
+      }
+    
+    
+      .contact-form{
+        width: 95%;
+      }
+    
+      .swiper{    
+        width: 20rem;    
+        height: 18rem;
+    }
+    
+    .swiper-slide img{
+        width: 20rem;    
+        height: 18rem;
+    }
+    
+    section#swiperSection{
+        margin-top: 3rem;
+    }
+    
+    section#contact{
+        margin-top: 3rem;
+    }
+    
+    .contact-form form input{
+        width: 15rem;
+        height: 3rem;
+    }
+    
+    .contact-form form textarea{
+        width: 15rem;
+        height: 15rem;
+    }
+    
+    
+    footer#footer{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
+    footer .location-address{
+        display: flex;
+        width: fit-content;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+      }
+    
+    
+      .location-address .location{
+        gap: 3rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;       
+      }
+   
+    
+      .location-address .socialmedia{
+        flex-direction: row;
+        margin-top: 1rem;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+      }
+    
+}
+
+
+@media screen and (min-width: 640px) and (max-width: 768px){
+
+    /* nav .container .logo{
+        display: none;
+      } */
+
+      .logo{
+        height: 4rem;
+        width: 4rem;
+        border-radius: 50%;
+        background-color: #fff;
+      }
+    
+    .logo img{
+        height:4rem;
+        width: 4rem;
+        border-radius: 50%;
+      }
+    
+      nav .container .pwr ul{
+        position: absolute;
+        top: 5rem;
+        display: flex;
+        flex-direction: column;
+        left: -100%;
+        gap: 0.1rem;
+        transition: all 400ms ease-in-out;       
+      }
+
+      nav .container .pwr ul.showOnClick{
+        left: 0;
+      }
+    
+    
+      nav .container .pwr ul a{
+        background-color:#BEC3C9;
+        width: 15rem;
+        border-bottom: solid;
+        
+      }
+    
+      nav .container .pwr ul a:last-child{
+        border-bottom: none;
+      }
+    
+      nav .container .pwr ul a:hover{
+        background-color: #BEC3C9;
+        width: 15rem;
+        border-bottom: solid;
+              
+      }
+    
+      nav .container .pwr ul a:hover:last-child{
+        border-bottom: none;
+      }    
+
+      
+      nav .humburherIcon{
+        display: flex;
+      }
+    
+      nav .humburherIcon span{
+        font-size: 2rem;
+      }
+    
+      section#header{
+        width: 100vw;  
+        
+      }
+    
+      section .header{
+        width: 100%;  
+    
+      }
+    
+      section .header-text h1{
+        left: 6rem;
+        top: 25rem;    
+        font-size: 3rem;
+    
+      }
+    
+      section .header-image img{
+        left: 0;
+        top: 19rem;
+        width: 5rem;
+      }
+    
+      section#about{
+        width: 100vw;
+      }
+    
+      section#about .articles{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+      }
+    
+      .articles .description{
+        gap: 1.5rem;
+      }
+    
+      .articles .image img{
+        width: 100%;
+        height: auto;    
+    
+    }
+
+    section#main .mainfeatures{
+      width: 100%;
+      display:flex;
+      flex-direction: column;
+      gap: 2rem; 
+        
+    }
+    
+      section#benefits{
+        width: 100vw;
+        margin-top: 1rem;
+        padding: 1rem;
+      }
+    
+      .faq-cards{
+        width: 100%;
+      }
+    
+      section#swiperSection{
+        width: 100vw;    
+      } 
+    
+      section#swiperSection{
+        width: 100%;
+      }
+    
+      section#contact{
+        width: 100vw;
+      }
+    
+    
+      .contact-form{
+        width: 95%;
+      }
+    
+      .swiper{    
+        width: 20rem;    
+        height: 18rem;
+    }
+    
+    .swiper-slide img{
+        width: 20rem;    
+        height: 18rem;
+    }
+    
+    section#swiperSection{
+        margin-top: 3rem;
+    }
+    
+    section#contact{
+        margin-top: 3rem;
+    }
+    
+    .contact-form form input{
+        width: 15rem;
+        height: 3rem;
+    }
+    
+    .contact-form form textarea{
+        width: 15rem;
+        height: 15rem;
+    }
+    
+    
+    footer#footer{
+      width: 100vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    
+    footer .location-address{
+        display: flex;
+        width: fit-content;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+      }
+    
+    
+      .location-address .location{
+        gap: 3rem;
+        width: 100%;
+        text-align: center;
+      }
+    
+      .location-address .socialmedia{
+        flex-direction: row;
+        margin-top: 1rem;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+      }
+    
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    /* nav .container .logo{
+        display: none;
+      } */
+
+      .logo{
+        height: 4rem;
+        width: 4rem;
+        border-radius: 50%;
+        background-color: #fff;
+    }
+    
+    .logo img{
+        height:4rem;
+        width: 4rem;
+        border-radius: 50%;
+    }
+    
+      nav .container .pwr ul{
+        position: absolute;
+        top: 5rem;
+        display: flex;
+        flex-direction: column;
+        left: -100%;
+        gap: 0.1rem;
+        transition: all 400ms ease-in-out;       
+      }
+
+      nav .container .pwr ul.showOnClick{
+        left: 0;
+      }
+    
+    
+      nav .container .pwr ul a{
+        background-color:#BEC3C9;
+        width: 15rem;
+        border-bottom: solid;
+        
+      }
+    
+      nav .container .pwr ul a:last-child{
+        border-bottom: none;
+      }
+    
+      nav .container .pwr ul a:hover{
+        background-color: #BEC3C9;
+        width: 15rem;
+        border-bottom: solid;
+              
+      }
+    
+      nav .container .pwr ul a:hover:last-child{
+        border-bottom: none;
+      }    
+
+      
+      nav .humburherIcon{
+        display: flex;
+      }
+    
+      nav .humburherIcon span{
+        font-size: 2rem;
+      }
+    
+      section#header{
+        width: 100vw;  
+        
+      }
+    
+      section .header{
+        width: 100%;  
+    
+      }
+    
+      section .header-text h1{
+        left: 6rem;
+        top: 25rem;    
+        font-size: 3rem; 
+    
+      }
+    
+      section .header-image img{
+        left: 0;
+        top: 19rem;
+        width: 5rem;
+      }
+    
+      section#about{
+        width: 100vw;
+      }
+    
+      section#about .articles{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+      }
+    
+      .articles .description{
+        gap: 1.5rem;
+      }
+    
+      .articles .image img{
+        width: 100%;
+        height: auto;    
+    
+    }
+    
+      section#benefits{
+        width: 100vw;
+        margin-top: 1rem;
+        padding: 1rem;
+      }
+    
+      .faq-cards{
+        width: 100%;
+      }
+    
+      section#swiperSection{
+        width: 100vw;    
+      } 
+    
+      section#swiperSection{
+        width: 100%;
+      }
+    
+      section#contact{
+        width: 100vw;
+      }
+    
+    
+      .contact-form{
+        width: 95%;
+      }
+    
+      .swiper{    
+        width: 20rem;    
+        height: 18rem;
+    }
+    
+    .swiper-slide img{
+        width: 20rem;    
+        height: 18rem;
+    }
+    
+    section#swiperSection{
+        margin-top: 3rem;
+    }
+    
+    section#contact{
+        margin-top: 3rem;
+    }
+    
+    .contact-form form input{
+        width: 15rem;
+        height: 3rem;
+    }
+    
+    .contact-form form textarea{
+        width: 15rem;
+        height: 15rem;
+    }
+    
+    
+    footer#footer{
+      width: 100vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    
+    footer .location-address{
+        display: flex;
+        width: fit-content;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+      }
+    
+    
+      .location-address .location{
+        gap: 3rem;
+        width: 100%;
+        text-align: center;
+      }
+    
+      .location-address .socialmedia{
+        flex-direction: row;
+        margin-top: 1rem;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+      }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
